@@ -1,0 +1,58 @@
+{
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "dev",
+          "commands": ["npm run dev"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "ts",
+          "commands": ["npm run ts"]
+        }
+      ]
+    }
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.addMissingImports": "explicit"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.words": [
+    "classname",
+    "clsx",
+    "DEDEDE",
+    "EDEDED",
+    "lucide",
+    "nowrap",
+    "optimized",
+    "svgs"
+  ],
+  "todo-tree.tree.disableCompactFolders": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "parentClassName",
+    "childrenClassName",
+    "bgColor",
+    "borderColor",
+    "color",
+    "textColor",
+    "gradient",
+    "themeColor",
+    "width",
+    "maxHeight"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
