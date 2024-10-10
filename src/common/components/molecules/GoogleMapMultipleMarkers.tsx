@@ -52,7 +52,7 @@ export const GoogleMapMultipleMarkers = ({
           {/* @ts-ignore */}
           <InfoBox
             position={{ lat: marker.lat, lng: marker.lng }}
-            onCloseClick={() => console.log("closed")}
+            onCloseClick={() => ""}
             options={{
               boxClass: "infobox-no-overload",
             }}>

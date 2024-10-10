@@ -155,7 +155,6 @@ export async function POST(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.log(error);
     return NextResponse.json({
       meta: {
         code: 0,
@@ -178,7 +177,6 @@ export async function DELETE(request: NextRequest) {
         "https://remotkey.sfo2.digitaloceanspaces.com/",
         ""
       );
-      console.log("Deleting QR path:", path);
       await deleteFromS3(path);
     }
 
@@ -188,7 +186,6 @@ export async function DELETE(request: NextRequest) {
         "https://remotkey.sfo2.digitaloceanspaces.com/",
         ""
       );
-      console.log("Deleting thumbnail path:", path);
       await deleteFromS3(path);
     }
   }
@@ -317,7 +314,6 @@ export async function PUT(request: NextRequest) {
       });
     }
   } catch (error) {
-    console.log(error);
     return NextResponse.json({
       meta: {
         code: 0,
